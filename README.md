@@ -1,7 +1,7 @@
 About tabulate
 ==============
 
-Home: https://bitbucket.org/astanin/python-tabulate
+Home: https://github.com/astanin/python-tabulate
 
 Package license: MIT
 
