@@ -14,14 +14,14 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - tabulate = tabulate:_main
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
@@ -33,12 +33,12 @@ test:
     - tabulate --help
 
 about:
-  home: https://bitbucket.org/astanin/python-tabulate
+  home: https://github.com/astanin/python-tabulate
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: 'Pretty-print tabular data in Python, a library and a command-line utility.'
-  dev_url: https://bitbucket.org/astanin/python-tabulate
+  dev_url: https://github.com/astanin/python-tabulate
 
 extra:
   recipe-maintainers:
