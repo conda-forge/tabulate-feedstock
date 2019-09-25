@@ -1,6 +1,6 @@
 {% set name = "tabulate" %}
-{% set version = "0.8.3" %}
-{% set sha256 = "8af07a39377cee1103a5c8b3330a421c2d99b9141e9cc5ddd2e3263fea416943" %}
+{% set version = "0.8.4" %}
+{% set sha256 = "dde537a1c44e6d9d635b2489923513bef89fadb181819998cccdf2a99e652464" %}
 
 package:
   name: {{ name|lower }}
