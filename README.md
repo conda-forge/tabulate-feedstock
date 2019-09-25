@@ -1,11 +1,7 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About tabulate
 ==============
 
-Home: https://bitbucket.org/astanin/python-tabulate
+Home: https://github.com/astanin/python-tabulate
 
 Package license: MIT
 
@@ -18,8 +14,15 @@ Summary: Pretty-print tabular data in Python, a library and a command-line utili
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tabulate-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tabulate-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4376&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tabulate-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
