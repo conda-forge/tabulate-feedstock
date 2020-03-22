@@ -1,6 +1,6 @@
 {% set name = "tabulate" %}
-{% set version = "0.8.6" %}
-{% set sha256 = "5470cc6687a091c7042cee89b2946d9235fe9f6d49c193a4ae2ac7bf386737c8" %}
+{% set version = "0.8.7" %}
+{% set sha256 = "db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - tabulate = tabulate:_main
 
@@ -37,7 +37,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Pretty-print tabular data in Python, a library and a command-line utility.'
+  summary: Pretty-print tabular data in Python, a library and a command-line utility.
   dev_url: https://github.com/astanin/python-tabulate
 
 extra:
