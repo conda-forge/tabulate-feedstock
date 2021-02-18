@@ -1,6 +1,6 @@
 {% set name = "tabulate" %}
-{% set version = "0.8.7" %}
-{% set sha256 = "db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007" %}
+{% set version = "0.8.8" %}
+{% set sha256 = "26f2589d80d332fefd2371d396863dedeb806f51b54bdb4b264579270b621e92" %}
 
 package:
   name: {{ name|lower }}
@@ -19,11 +19,11 @@ build:
     - tabulate = tabulate:_main
 
 requirements:
-  build:
-    - python
+  host:
+    - python =2.7|>=3.5
     - pip
   run:
-    - python
+    - python =2.7|>=3.5
 
 test:
   imports:
