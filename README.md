@@ -5,11 +5,11 @@ Home: https://github.com/astanin/python-tabulate
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tabulate-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pretty-print tabular data in Python, a library and a command-line utility.
 
-
+Development: https://github.com/astanin/python-tabulate
 
 Current build status
 ====================
