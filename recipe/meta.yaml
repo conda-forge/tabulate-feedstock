@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -22,15 +22,18 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools_scm
   run:
     - python >=3.7
 
 test:
+  requires:
+    - pip
   imports:
     - tabulate
-
   commands:
     - tabulate --help
+    - pip check
 
 about:
   home: https://github.com/astanin/python-tabulate
