@@ -1,18 +1,16 @@
 {% set name = "tabulate" %}
 {% set version = "0.9.0" %}
-{% set sha256 = "0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,15 +18,17 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
+    - setuptools
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - tabulate
   commands:
